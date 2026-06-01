@@ -1,0 +1,25 @@
+1. Abrir Docker Desktop.
+2. Abrir una terminal dentro de la carpeta del proyecto.
+3. Ejecutar:
+   docker-compose up -d --build
+4. Abrir en el navegador:
+   http://localhost:8080/
+5. Para phpMyAdmin abrir:
+   http://localhost:8082/
+
+Datos de la base de datos:
+Servidor: db
+Base de datos: academia_nexus
+Usuario: appuser
+Contraseña: apppass
+Puerto MySQL local: 3307
+
+Comandos útiles:
+Detener contenedores:
+docker-compose down
+
+Detener contenedores y borrar volumen de base de datos:
+docker-compose down -v
+
+Ver contenedores activos:
+docker ps
