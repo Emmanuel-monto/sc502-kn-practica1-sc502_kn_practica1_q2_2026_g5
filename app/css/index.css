@@ -1,3 +1,6 @@
+/*  Rol 1: Allison — Página de Inicio*/
+
+/* ── Hero ── */
 .hero {
   background: linear-gradient(135deg, var(--color-primary) 0%, #0f3460 60%, #16213E 100%);
   min-height: 88vh;
