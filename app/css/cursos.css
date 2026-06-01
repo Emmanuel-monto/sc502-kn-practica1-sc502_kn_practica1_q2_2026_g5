@@ -1,0 +1,213 @@
+/* ============================================================
+   ACADEMIA NEXUS — cursos.css
+   Rol 2: Emmanuel — Página de Cursos
+   ============================================================ */
+
+/* ── Page Header ── */
+.page-header {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #0f3460 100%);
+  padding: 5rem 2rem 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 60px;
+  background: var(--color-white);
+  clip-path: ellipse(55% 100% at 50% 100%);
+}
+
+.page-header h1 {
+  color: var(--color-white);
+  font-size: 2.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.page-header p {
+  color: rgba(255,255,255,0.72);
+  font-size: 1.05rem;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ── Search Bar ── */
+.search-section {
+  padding: 3rem 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search-bar-wrapper {
+  position: relative;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.search-bar-wrapper input {
+  width: 100%;
+  padding: 14px 20px 14px 48px;
+  border: 2px solid var(--color-border);
+  border-radius: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  outline: none;
+  transition: var(--transition);
+}
+
+.search-bar-wrapper input:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 4px rgba(233,69,96,0.1);
+}
+
+.search-bar-wrapper .search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-muted);
+  font-size: 1rem;
+}
+
+/* ── Catálogo por categorías ── */
+.catalog-section {
+  padding: 2rem 2rem 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-block {
+  margin-bottom: 4rem;
+}
+
+.category-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.category-title .cat-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--color-accent);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: white;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+/* Tarjeta de curso */
+.catalog-card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: transparent;
+}
+
+.catalog-card-thumb {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  position: relative;
+}
+
+.catalog-card-thumb.t1 { background: linear-gradient(135deg,#2196f3,#0d47a1); }
+.catalog-card-thumb.t2 { background: linear-gradient(135deg,#43a047,#1b5e20); }
+.catalog-card-thumb.t3 { background: linear-gradient(135deg,#e53935,#b71c1c); }
+.catalog-card-thumb.t4 { background: linear-gradient(135deg,#8e24aa,#4a148c); }
+.catalog-card-thumb.t5 { background: linear-gradient(135deg,#fb8c00,#e65100); }
+.catalog-card-thumb.t6 { background: linear-gradient(135deg,#00acc1,#006064); }
+
+.card-category-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.4);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 3px 10px;
+  border-radius: 50px;
+  backdrop-filter: blur(4px);
+}
+
+.catalog-card-body {
+  padding: 1.3rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-card-body h3 {
+  font-size: 1rem;
+  color: var(--color-primary);
+  margin-bottom: 0.4rem;
+}
+
+.catalog-card-body p {
+  font-size: 0.84rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.card-meta .duration {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
+
+.card-meta .price {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--color-accent);
+}
+
+/* ── Responsive Cursos ── */
+@media (max-width: 900px) {
+  .catalog-grid { grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 580px) {
+  .catalog-grid { grid-template-columns: 1fr; }
+  .page-header h1 { font-size: 1.9rem; }
+}

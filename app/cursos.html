@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academia Nexus — Cursos</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/cursos.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR
+       ══════════════════════════════════════ -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <div class="navbar-logo">N</div>
+        Academia <span class="brand-accent">Nexus</span>
+      </a>
+      <button class="navbar-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar-links" id="navLinks">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cursos.html" class="active">Cursos</a></li>
+        <li><a href="profesores.html">Profesores</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       PAGE HEADER
+       Rol 2: Emmanuel
+       ══════════════════════════════════════ -->
+  <header class="page-header">
+    <span class="badge-tag" style="background:rgba(255,255,255,0.15); color:#fff;">📚 Catálogo completo</span>
+    <h1>Nuestros Cursos</h1>
+    <p>Explora más de 120 programas diseñados por expertos para impulsar tu carrera profesional.</p>
+  </header>
+
+  <!-- ══════════════════════════════════════
+       BARRA DE BÚSQUEDA
+       Rol 2: Emmanuel
+       ══════════════════════════════════════ -->
+  <div class="search-section">
+    <div class="search-bar-wrapper">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="Buscar cursos por nombre o categoría..." />
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       CATÁLOGO POR CATEGORÍAS
+       Rol 2: Emmanuel
+       ══════════════════════════════════════ -->
+  <main class="catalog-section">
+
+    <!-- CATEGORÍA 1: Tecnología -->
+    <div class="category-block" data-category="tecnologia">
+      <h2 class="category-title">
+        <div class="cat-icon">💻</div>
+        Tecnología y Programación
+      </h2>
+      <div class="catalog-grid">
+
+        <!-- Curso 1 -->
+        <div class="catalog-card">
+          <div class="catalog-card-thumb t1">
+            <span class="card-category-tag">Tecnología</span>
+            💻
+          </div>
+          <div class="catalog-card-body">
+            <h3>Desarrollo Web Full Stack</h3>
+            <p>Aprende HTML, CSS, JavaScript, Node.js, Express y PostgreSQL para construir aplicaciones web completas de principio a fin.</p>
+            <div class="card-meta">
+              <span class="duration">⏱ 6 meses</span>
+              <span class="price">₡89,000</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Curso 2 -->
+        <div class="catalog-card">
+          <div class="catalog-card-thumb t2">
+            <span class="card-category-tag">Tecnología</span>
+            🐍
+          </div>
+          <div class="catalog-card-body">
+            <h3>Python para Ciencia de Datos</h3>
+            <p>Análisis de datos, visualización con Matplotlib y Pandas, introducción a Machine Learning con Scikit-Learn.</p>
+            <div class="card-meta">
+              <span class="duration">⏱ 4 meses</span>
+              <span class="price">₡75,000</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Curso 3 -->
+        <div class="catalog-card">
+          <div class="catalog-card-thumb t3">
+            <span class="card-category-tag">Tecnología</span>
+            ☁️
+          </div>
+          <div class="catalog-card-body">
+            <h3>Cloud Computing con AWS</h3>
+            <p>Despliega aplicaciones en la nube, gestiona servicios EC2, S3, RDS y prepárate para la certificación AWS.</p>
+            <div class="card-meta">
+              <span class="duration">⏱ 3 meses</span>
+              <span class="price">₡95,000</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CATEGORÍA 2: Diseño y Creatividad -->
+    <div class="category-block" data-category="diseno">
+      <h2 class="category-title">
+        <div class="cat-icon">🎨</div>
+        Diseño y Creatividad
+      </h2>
+      <div class="catalog-grid">
+
+        <!-- Curso 4 -->
+        <div class="catalog-card">
+          <div class="catalog-card-thumb t4">
+            <span class="card-category-tag">Diseño</span>
+            🎨
+          </div>
+          <div class="catalog-card-body">
+            <h3>Diseño UX/UI con Figma</h3>
+            <p>Diseña interfaces centradas en el usuario, crea prototipos interactivos y aprende a realizar pruebas de usabilidad.</p>
+            <div class="card-meta">
+              <span class="duration">⏱ 3 meses</span>
+              <span class="price">₡68,000</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Curso 5 -->
+        <div class="catalog-card">
+          <div class="catalog-card-thumb t5">
+            <span class="card-category-tag">Diseño</span>
+            📱
+          </div>
+          <div class="catalog-card-body">
+            <h3>Diseño Gráfico Digital</h3>
+            <p>Domina Adobe Photoshop, Illustrator e InDesign para crear piezas gráficas profesionales para medios digitales e impresos.</p>
+            <div class="card-meta">
+              <span class="duration">⏱ 4 meses</span>
+              <span class="price">₡72,000</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Curso 6 -->
+        <div class="catalog-card">
+          <div class="catalog-card-thumb t6">
+            <span class="card-category-tag">Diseño</span>
+            🎬
+          </div>
+          <div class="catalog-card-body">
+            <h3>Animación y Motion Graphics</h3>
+            <p>Crea animaciones impactantes con After Effects, aprende principios de animación y produce contenido para redes sociales.</p>
+            <div class="card-meta">
+              <span class="duration">⏱ 3 meses</span>
+              <span class="price">₡80,000</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3>Academia <span>Nexus</span></h3>
+        <p>Formando los profesionales del mañana con educación de calidad, accesible y orientada a resultados.</p>
+        <div class="footer-social">
+          <a href="#" title="Facebook">f</a>
+          <a href="#" title="Instagram">ig</a>
+          <a href="#" title="Twitter">tw</a>
+          <a href="#" title="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Páginas</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="profesores.html">Profesores</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="#">📍 San José, Costa Rica</a></li>
+          <li><a href="#">📞 +506 2200-0000</a></li>
+          <li><a href="#">✉️ info@nexus.ac.cr</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Academia Nexus. Todos los derechos reservados.</span>
+      <span>Desarrollado por el Grupo — Allison · Emmanuel · Valery · Juan</span>
+    </div>
+  </footer>
+
+  <script>
+    // Menú hamburguesa
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+    // Búsqueda de cursos
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', function () {
+      const query = this.value.toLowerCase();
+      document.querySelectorAll('.catalog-card').forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(query) ? 'flex' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
