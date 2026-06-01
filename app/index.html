@@ -1,0 +1,231 @@
+/*  Rol 1: Allison — Página de Inicio*/
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academia Grupo5 — Inicio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <div class="navbar-logo">N</div>
+        Academia <span class="brand-accent">Grupo5</span>
+      </a>
+
+      <button class="navbar-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="navbar-links" id="navLinks">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="profesores.html">Profesores</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="badge-tag">🎓 La academia del futuro</span>
+        <h1>Aprende, Crece y<br /><span>Transforma</span> tu Carrera</h1>
+        <p>
+          En Academia Grupo5 transformamos el aprendizaje con cursos diseñados por expertos,
+          metodologías prácticas y una comunidad que te impulsa.
+        </p>
+        <div class="hero-buttons">
+          <a href="cursos.html" class="btn-primary">Explorar Cursos</a>
+          <a href="contacto.html" class="btn-outline" style="color:rgba(255,255,255,0.85); border-color:rgba(255,255,255,0.4);">Contáctanos</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-stat">
+            <div class="stat-icon">📚</div>
+            <div class="stat-info">
+              <strong>+120</strong>
+              <span>Cursos disponibles</span>
+            </div>
+          </div>
+          <div class="hero-card-stat">
+            <div class="stat-icon">👩‍🏫</div>
+            <div class="stat-info">
+              <strong>35</strong>
+              <span>Profesores expertos</span>
+            </div>
+          </div>
+          <div class="hero-card-stat">
+            <div class="stat-icon">🏆</div>
+            <div class="stat-info">
+              <strong>4,800+</strong>
+              <span>Estudiantes graduados</span>
+            </div>
+          </div>
+          <div class="hero-card-stat">
+            <div class="stat-icon">⭐</div>
+            <div class="stat-info">
+              <strong>4.9 / 5</strong>
+              <span>Valoración promedio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-courses">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">Lo más popular</span>
+        <h2>Cursos Destacados</h2>
+        <p>Elige entre nuestros programas más demandados y empieza hoy mismo tu transformación profesional.</p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Tarjeta 1 -->
+        <div class="course-card">
+          <div class="course-card-img bg1">💻</div>
+          <div class="course-card-body">
+            <h3>Desarrollo Web Full Stack</h3>
+            <p>Domina HTML, CSS, JavaScript, Node.js y bases de datos en un programa completo e intensivo.</p>
+            <a href="cursos.html" class="btn-primary">Ver más</a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="course-card">
+          <div class="course-card-img bg2">🎨</div>
+          <div class="course-card-body">
+            <h3>Diseño UX/UI Profesional</h3>
+            <p>Crea interfaces atractivas y centradas en el usuario con Figma, Adobe XD y metodologías ágiles.</p>
+            <a href="cursos.html" class="btn-primary">Ver más</a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="course-card">
+          <div class="course-card-img bg3">🤖</div>
+          <div class="course-card-body">
+            <h3>Inteligencia Artificial Aplicada</h3>
+            <p>Aprende Machine Learning, Python y frameworks modernos para construir soluciones de IA.</p>
+            <a href="cursos.html" class="btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-stats">
+    <div class="container">
+      <div class="section-header">
+        <h2 style="color:var(--color-white);">Academia Nexus en Números</h2>
+        <p style="color:rgba(255,255,255,0.6);">Resultados que hablan por sí solos.</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="number">4,800+</div>
+          <div class="label">Estudiantes Activos</div>
+        </div>
+        <div class="stat-box">
+          <div class="number">35</div>
+          <div class="label">Profesores Certificados</div>
+        </div>
+        <div class="stat-box">
+          <div class="number">120+</div>
+          <div class="label">Cursos Disponibles</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">Lo que dicen nuestros estudiantes</span>
+        <h2>Historias de Éxito</h2>
+      </div>
+      <div class="testimonials-grid">
+        <!-- Testimonio 1 -->
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "Gracias a Academia Nexus conseguí mi primer empleo como desarrolladora web a los 3 meses
+            de terminar el curso. Los instructores son increíbles y el material es muy práctico."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">S</div>
+            <div class="author-info">
+              <strong>Sofía Ramírez</strong>
+              <span>Desarrolladora Front-End en TechCorp</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "El curso de UX/UI cambió completamente mi perspectiva. Aprendí más aquí que en dos años
+            de tutoriales en YouTube. ¡100% recomendado para quienes quieren resultados reales!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#667eea;">M</div>
+            <div class="author-info">
+              <strong>Marco Solano</strong>
+              <span>Diseñador UX en StartUpBridge</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3>Academia <span>Grupo5</span></h3>
+        <p>Formando los profesionales del mañana con educación de calidad, accesible y orientada a resultados.</p>
+        <div class="footer-social">
+          <a href="#" title="Facebook">f</a>
+          <a href="#" title="Instagram">ig</a>
+          <a href="#" title="Twitter">tw</a>
+          <a href="#" title="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Páginas</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="profesores.html">Profesores</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="#">📍 San José, Costa Rica</a></li>
+          <li><a href="#">📞 +506 2200-0000</a></li>
+          <li><a href="#">✉️ info@nexus.ac.cr</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Academia Grupo5. Todos los derechos reservados.</span>
+      <span>Desarrollado por el Grupo — Allison · Emmanuel · Valery · Juan</span>
+    </div>
+  </footer>
+
+  <script>
+    // Menú hamburguesa responsive
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+</body>
+</html>
