@@ -9,9 +9,7 @@
 </head>
 <body>
 
-  <!-- ══════════════════════════════════════
-       NAVBAR
-       ══════════════════════════════════════ -->
+
   <nav class="navbar">
     <div class="navbar-inner">
       <a href="index.html" class="navbar-brand">
@@ -30,110 +28,110 @@
     </div>
   </nav>
 
-  <!-- ══════════════════════════════════════
-       PAGE HEADER
-       Rol 4: Juan
-       ══════════════════════════════════════ -->
+
   <header class="page-header">
-    <span class="badge-tag" style="background:rgba(255,255,255,0.15); color:#fff;">✉️ Estamos aquí</span>
+    <span class="badge-tag" style="background:rgba(255,255,255,0.15); color:#fff;"></span>
     <h1>Contáctanos</h1>
     <p>¿Tienes preguntas sobre nuestros cursos? Escríbenos y te responderemos en menos de 24 horas.</p>
   </header>
 
-  <!-- ══════════════════════════════════════
-       CONTACTO: INFO + FORMULARIO
-       Rol 4: Juan
-       ══════════════════════════════════════ -->
+
   <section class="contact-section">
 
-    <!-- Información de la academia -->
-    <div class="contact-info">
-      <h2>Información de Contacto</h2>
-      <p>
-        Visítanos, llámanos o envíanos un mensaje. Nuestro equipo de atención al estudiante
-        está disponible de lunes a viernes de 8 a.m. a 6 p.m.
-      </p>
+  <!-- Información de la academia -->
+  <div class="contact-info">
+    <h2>Información de Contacto</h2>
+    <p>
+      Visítanos, llámanos o envíanos un mensaje. Nuestro equipo de atención al estudiante
+      está disponible de lunes a viernes de 8 a.m. a 6 p.m.
+    </p>
 
-      <div class="info-item">
-        <div class="info-icon">📍</div>
-        <div class="info-text">
-          <strong>Dirección</strong>
-          <span>Barrio Amón, Av. 11, calle 3-5,<br />San José, Costa Rica</span>
-        </div>
-      </div>
-
-      <div class="info-item">
-        <div class="info-icon">📞</div>
-        <div class="info-text">
-          <strong>Teléfono</strong>
-          <span>+506 2200-0000</span>
-        </div>
-      </div>
-
-      <div class="info-item">
-        <div class="info-icon">✉️</div>
-        <div class="info-text">
-          <strong>Correo Electrónico</strong>
-          <span>info@nexus.ac.cr</span>
-        </div>
-      </div>
-
-      <div class="info-item">
-        <div class="info-icon">🕐</div>
-        <div class="info-text">
-          <strong>Horario de Atención</strong>
-          <span>Lunes a Viernes: 8:00 a.m. – 6:00 p.m.<br />Sábados: 9:00 a.m. – 12:00 m.d.</span>
-        </div>
+    <div class="info-item">
+      <div class="info-icon">📍</div>
+      <div class="info-text">
+        <strong>Dirección</strong>
+        <span>Barrio Amón, Av. 11, calle 3-5,<br />San José, Costa Rica</span>
       </div>
     </div>
 
-    <!-- Formulario de contacto -->
-    <div class="contact-form-wrapper">
-      <h3>Envíanos un Mensaje</h3>
-      <p>Completa el formulario y te responderemos a la brevedad.</p>
+    <div class="info-item">
+      <div class="info-icon">📞</div>
+      <div class="info-text">
+        <strong>Teléfono</strong>
+        <span>+506 2200-0000</span>
+      </div>
+    </div>
+
+    <div class="info-item">
+      <div class="info-icon">✉️</div>
+      <div class="info-text">
+        <strong>Correo Electrónico</strong>
+        <span>info@nexus.ac.cr</span>
+      </div>
+    </div>
+
+    <div class="info-item">
+      <div class="info-icon">🕐</div>
+      <div class="info-text">
+        <strong>Horario de Atención</strong>
+        <span>Lunes a Viernes: 8:00 a.m. – 6:00 p.m.<br />Sábados: 9:00 a.m. – 12:00 m.d.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Formulario de contacto -->
+  <div class="contact-form-wrapper">
+
+    <h3>Envíanos un Mensaje</h3>
+    <p>Completa el formulario y te responderemos a la brevedad.</p>
+
+    <form id="contactForm" novalidate>
+
+      <div id="formSuccess" class="form-success"></div>
 
       <div class="form-group">
         <label for="fullname">Nombre Completo *</label>
-        <input type="text" id="fullname" name="fullname" placeholder="Ej. María García López" required />
+        <input type="text" id="fullname" name="fullname" placeholder="Ej. María García López" />
+        <small id="fullnameError" class="error-message"></small>
       </div>
 
       <div class="form-row">
+
         <div class="form-group">
           <label for="email">Correo Electrónico *</label>
-          <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required />
+          <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" />
+          <small id="emailError" class="error-message"></small>
         </div>
+
         <div class="form-group">
-          <label for="phone">Teléfono</label>
-          <input type="tel" id="phone" name="phone" placeholder="+506 8888-8888" />
+          <label for="phone">Teléfono *</label>
+          <input type="tel" id="phone" name="phone" placeholder="88888888" />
+          <small id="phoneError" class="error-message"></small>
         </div>
+
       </div>
 
       <div class="form-group">
         <label for="subject">Asunto *</label>
-        <select id="subject" name="subject" required>
-          <option value="" disabled selected>Selecciona un asunto...</option>
-          <option value="informacion">Información sobre cursos</option>
-          <option value="inscripcion">Proceso de inscripción</option>
-          <option value="becas">Becas y financiamiento</option>
-          <option value="empresas">Alianzas empresariales</option>
-          <option value="otro">Otro</option>
-        </select>
+        <input type="text" id="subject" name="subject" placeholder="Ej. Información de cursos" />
+        <small id="subjectError" class="error-message"></small>
       </div>
 
       <div class="form-group">
         <label for="message">Mensaje *</label>
-        <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..."></textarea>
+        <small id="messageError" class="error-message"></small>
       </div>
 
-      <button type="button" class="form-submit">Enviar Mensaje ✉️</button>
-    </div>
+      <button type="submit" id="submitBtn" class="form-submit" disabled>Enviar Mensaje ✉️</button>
 
-  </section>
+    </form>
 
-  <!-- ══════════════════════════════════════
-       MAPA INCRUSTADO
-       Rol 4: Juan
-       ══════════════════════════════════════ -->
+  </div>
+
+</section>
+
+
   <section class="map-section">
     <h2>¿Dónde Estamos?</h2>
     <div class="map-wrapper">
@@ -148,9 +146,6 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════
-       FOOTER
-       ══════════════════════════════════════ -->
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
@@ -187,10 +182,7 @@
     </div>
   </footer>
 
-  <script>
-    const toggle = document.getElementById('navToggle');
-    const links  = document.getElementById('navLinks');
-    toggle.addEventListener('click', () => links.classList.toggle('open'));
-  </script>
+<script src="js/contacto.js"></script>
+
 </body>
 </html>
