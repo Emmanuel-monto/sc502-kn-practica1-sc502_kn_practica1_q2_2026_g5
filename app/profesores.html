@@ -8,7 +8,15 @@
   <link rel="stylesheet" href="css/profesores.css" />
 </head>
 <body>
-
+  <!-- ══════════════════════════════════════
+       MODAL
+       ══════════════════════════════════════ -->
+  <div id="teacherModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <div id="modalBody"></div>
+  </div>
+</div>
   <!-- ══════════════════════════════════════
        NAVBAR
        ══════════════════════════════════════ -->
@@ -51,41 +59,7 @@
       <p>Cada profesor trae años de experiencia en la industria para ofrecerte una formación real y aplicable.</p>
     </div>
 
-    <div class="team-grid">
-
-      <!-- Profesor 1 -->
-      <div class="teacher-card">
-        <div class="teacher-avatar avatar-1">AR</div>
-        <h3>Ana Rodríguez</h3>
-        <p class="teacher-specialty">Desarrollo Web</p>
-        <p>Ingeniera en software con 10 años de experiencia en empresas como Google y Amazon. Especialista en React, Node.js y arquitecturas cloud.</p>
-      </div>
-
-      <!-- Profesor 2 -->
-      <div class="teacher-card">
-        <div class="teacher-avatar avatar-2">CM</div>
-        <h3>Carlos Mora</h3>
-        <p class="teacher-specialty">Ciencia de Datos</p>
-        <p>Doctor en Matemáticas Aplicadas, ex investigador del MIT. Lleva 8 años formando científicos de datos con Python, R y herramientas de Big Data.</p>
-      </div>
-
-      <!-- Profesor 3 -->
-      <div class="teacher-card">
-        <div class="teacher-avatar avatar-3">LP</div>
-        <h3>Laura Pérez</h3>
-        <p class="teacher-specialty">Diseño UX/UI</p>
-        <p>Diseñadora senior con más de 12 años creando experiencias digitales. Ha trabajado con startups de Silicon Valley y agencias de diseño internacionales.</p>
-      </div>
-
-      <!-- Profesor 4 -->
-      <div class="teacher-card">
-        <div class="teacher-avatar avatar-4">JF</div>
-        <h3>Jorge Fallas</h3>
-        <p class="teacher-specialty">Cloud &amp; DevOps</p>
-        <p>Certificado en AWS, GCP y Azure. Con 9 años de experiencia implementando soluciones cloud y pipelines CI/CD para empresas Fortune 500.</p>
-      </div>
-
-    </div>
+    <div class="team-grid" id="teamGrid"></div>
   </section>
 
   <!-- ══════════════════════════════════════
@@ -164,11 +138,6 @@
       <span>Desarrollado por el Grupo — Allison · Emmanuel · Valery · Juan</span>
     </div>
   </footer>
-
-  <script>
-    const toggle = document.getElementById('navToggle');
-    const links  = document.getElementById('navLinks');
-    toggle.addEventListener('click', () => links.classList.toggle('open'));
-  </script>
+<script src="js/profesores.js"></script>
 </body>
 </html>
