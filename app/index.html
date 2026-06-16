@@ -1,4 +1,6 @@
-/*  Rol 1: Allison — Página de Inicio*/
+//  ACADEMIA NEXUS — index.js
+//  Rol 1: Allison
+//  Página: index.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -30,14 +32,13 @@
     </div>
   </nav>
 
-
   <section class="hero">
     <div class="hero-content">
       <div class="hero-text">
         <span class="badge-tag">🎓 La academia del futuro</span>
         <h1>Aprende, Crece y<br /><span>Transforma</span> tu Carrera</h1>
         <p>
-          En Academia Grupo5 transformamos el aprendizaje con cursos diseñados por expertos,
+          En Academia Nexus transformamos el aprendizaje con cursos diseñados por expertos,
           metodologías prácticas y una comunidad que te impulsa.
         </p>
         <div class="hero-buttons">
@@ -88,62 +89,35 @@
         <h2>Cursos Destacados</h2>
         <p>Elige entre nuestros programas más demandados y empieza hoy mismo tu transformación profesional.</p>
       </div>
-
-      <div class="cards-grid">
-        <!-- Tarjeta 1 -->
-        <div class="course-card">
-          <div class="course-card-img bg1">💻</div>
-          <div class="course-card-body">
-            <h3>Desarrollo Web Full Stack</h3>
-            <p>Domina HTML, CSS, JavaScript, Node.js y bases de datos en un programa completo e intensivo.</p>
-            <a href="cursos.html" class="btn-primary">Ver más</a>
-          </div>
-        </div>
-
-        <!-- Tarjeta 2 -->
-        <div class="course-card">
-          <div class="course-card-img bg2">🎨</div>
-          <div class="course-card-body">
-            <h3>Diseño UX/UI Profesional</h3>
-            <p>Crea interfaces atractivas y centradas en el usuario con Figma, Adobe XD y metodologías ágiles.</p>
-            <a href="cursos.html" class="btn-primary">Ver más</a>
-          </div>
-        </div>
-
-        <!-- Tarjeta 3 -->
-        <div class="course-card">
-          <div class="course-card-img bg3">🤖</div>
-          <div class="course-card-body">
-            <h3>Inteligencia Artificial Aplicada</h3>
-            <p>Aprende Machine Learning, Python y frameworks modernos para construir soluciones de IA.</p>
-            <a href="cursos.html" class="btn-primary">Ver más</a>
-          </div>
-        </div>
-      </div>
+      <div class="cards-grid" id="cursosContainer"></div>
     </div>
   </section>
+
+
   <section class="section-stats">
     <div class="container">
       <div class="section-header">
-        <h2 style="color:var(--color-white);">Academia Nexus en Números</h2>
+        <h2 style="color:var(--color-white);">Academia Grupo5 en Números</h2>
         <p style="color:rgba(255,255,255,0.6);">Resultados que hablan por sí solos.</p>
       </div>
       <div class="stats-grid">
         <div class="stat-box">
-          <div class="number">4,800+</div>
+          <div class="number" id="statEstudiantes"></div>
           <div class="label">Estudiantes Activos</div>
         </div>
         <div class="stat-box">
-          <div class="number">35</div>
+          <div class="number" id="statProfesores"></div>
           <div class="label">Profesores Certificados</div>
         </div>
         <div class="stat-box">
-          <div class="number">120+</div>
+          <div class="number" id="statCursos"></div>
           <div class="label">Cursos Disponibles</div>
         </div>
       </div>
     </div>
   </section>
+
+
   <section class="section-testimonials">
     <div class="container">
       <div class="section-header">
@@ -151,7 +125,6 @@
         <h2>Historias de Éxito</h2>
       </div>
       <div class="testimonials-grid">
-        <!-- Testimonio 1 -->
         <div class="testimonial-card">
           <p class="testimonial-text">
             "Gracias a Academia Nexus conseguí mi primer empleo como desarrolladora web a los 3 meses
@@ -165,8 +138,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Testimonio 2 -->
         <div class="testimonial-card">
           <p class="testimonial-text">
             "El curso de UX/UI cambió completamente mi perspectiva. Aprendí más aquí que en dos años
@@ -211,7 +182,7 @@
         <ul>
           <li><a href="#">📍 San José, Costa Rica</a></li>
           <li><a href="#">📞 +506 2200-0000</a></li>
-          <li><a href="#">✉️ info@nexus.ac.cr</a></li>
+          <li><a href="#">✉️ info@grupo5.ac.cr</a></li>
         </ul>
       </div>
     </div>
@@ -221,11 +192,6 @@
     </div>
   </footer>
 
-  <script>
-    // Menú hamburguesa responsive
-    const toggle = document.getElementById('navToggle');
-    const links  = document.getElementById('navLinks');
-    toggle.addEventListener('click', () => links.classList.toggle('open'));
-  </script>
+  <script src="js/index.js"></script>
 </body>
 </html>

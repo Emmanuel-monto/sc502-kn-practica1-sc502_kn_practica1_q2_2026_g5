@@ -1,10 +1,3 @@
-//  ACADEMIA NEXUS — index.js
-//  Rol 1: Allison
-//  Página: index.html
-
-
-
-// Array de cursos destacados
 
 const cursoDestacados = [
     {
