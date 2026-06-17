@@ -1,0 +1,1 @@
+"Proyecto grupal académico — Academia Nexus. Mi rol en el equipo: desarrollo de la página de catálogo de cursos (cursos.html, cursos.css, cursos.js), incluyendo filtrado dinámico, búsqueda en tiempo real e integración de Bootstrap Icons."
